@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        .checkout-wrapper {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .checkout-content {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 800px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .checkout-content h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #333;
+            text-align: center;
+        }
+
+        .checkout-section {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .checkout-row {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+
+        .checkout-row label {
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .checkout-row input[type="text"],
+        .checkout-row input[type="email"],
+        .checkout-row input[type="tel"],
+        .checkout-row input[type="date"],
+        .checkout-row select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background-color: #fff;
+            color: #333;
+        }
+
+        .checkout-save-btn {
+            align-self: flex-end;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            background-color: #d35400;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .checkout-save-btn:hover {
+            background-color: #b34900;
+        }
+    </style>
+</head>
+<body class="scroll-animation">
+    <header>
+        <div class="container">
+            <div id="loading-overlay" class="loading-overlay">
+                <div class="loader"></div>
+            </div>
+            <nav class="header">
+                <div class="logo">
+                    <a href="index.html">TechTrove.</a>
+                </div>
+                <div class="promo-banner">
+                    <p id="promo-banner-message">Free shipping on orders over ₱25,000!</p>
+                </div>
+                <div class="menu-right">
+                    <button class="cart-btn" id="cart-btn"><i class="fas fa-shopping-cart"></i><small class="cart-qty">0</small></button>
+                    <div id="auth-container"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Navigation -->
+    <nav class="main-nav">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Shop</a></li>
+                <li><a href="index.html#about-us">About Us</a></li>
+                <li><a href="#support">Support</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="checkout-wrapper">
+        <main class="checkout-content">
+            <h1>Checkout</h1>
+            
+            <div class="checkout-section">
+                <h2>Shipping Details</h2>
+                <div class="checkout-row">
+                    <label for="shipping-name">Name:</label>
+                    <input type="text" id="shipping-name" name="shipping-name">
+                </div>
+                <div class="checkout-row">
+                    <label for="shipping-address">Address:</label>
+                    <input type="text" id="shipping-address" name="shipping-address">
+                </div>
+                <div class="checkout-row">
+                    <label for="shipping-city">City:</label>
+                    <input type="text" id="shipping-city" name="shipping-city">
+                </div>
+                <div class="checkout-row">
+                    <label for="shipping-state">State/Province:</label>
+                    <input type="text" id="shipping-state" name="shipping-state">
+                </div>
+                <div class="checkout-row">
+                    <label for="shipping-country">Country:</label>
+                    <input type="text" id="shipping-country" name="shipping-country">
+                </div>
+                <div class="checkout-row">
+                    <label for="shipping-zip">Zip Code:</label>
+                    <input type="text" id="shipping-zip" name="shipping-zip">
+                </div>
+            </div>
+
+            <div class="checkout-section">
+                <h2>Payment Information</h2>
+                <div class="checkout-row">
+                    <label for="card-name">Name on Card:</label>
+                    <input type="text" id="card-name" name="card-name" placeholder="Enter the name on your card">
+                </div>
+                <div class="checkout-row">
+                    <label for="card-number">Card Number:</label>
+                    <input type="text" id="card-number" name="card-number" placeholder="Enter your card number">
+                </div>
+                <div class="checkout-row">
+                    <label for="card-expiry">Expiry Date:</label>
+                    <input type="text" id="card-expiry" name="card-expiry" placeholder="MM/YY">
+                </div>
+                <div class="checkout-row">
+                    <label for="card-cvc">CVC:</label>
+                    <input type="text" id="card-cvc" name="card-cvc" placeholder="Enter your card's CVC">
+                </div>
+            </div>
+
+            <button type="submit" class="checkout-save-btn" id="complete-purchase">Complete Purchase</button>
+        </main>
+    </div>
+
+    <footer id="support">
+        <div class="container">
+            <div class="footer-content">
+                <div class="address">
+                    <h3>ITP104L Finals Project</h3>
+                    <span>GROUP MEMBERS:</span>
+                    <p>Co, Jensen Allen Y.<br>De Castro, Justine Raineir<br>Quinto, Ralph Guerson F.</p>
+                </div>
+                <div class="customer-service">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Order Tracking</a></li>
+                        <li><a href="#">Returns & Exchanges</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="legal">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                <div class="stay-connected">
+                    <h3>Stay Connected</h3>
+                    <p>Join our newsletter for exclusive deals and the latest tech news:</p>
+                    <input type="text" placeholder="Your Email">
+                    <button>Subscribe</button>
+                    <p>Follow us on social media:</p>
+                    <ul class="social-media">
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>© 2024 All rights reserved. Design by <a href="index.html">CoDeCastroQuinto</a></p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const profileData = JSON.parse(localStorage.getItem('profileData'));
+            
+            if (profileData) {
+                document.getElementById('shipping-name').value = profileData.name;
+                document.getElementById('shipping-address').value = profileData.street;
+                document.getElementById('shipping-city').value = profileData.city;
+                document.getElementById('shipping-state').value = profileData.state;
+                document.getElementById('shipping-country').value = profileData.country;
+                document.getElementById('shipping-zip').value = profileData.zip;
+            }
+    
+            document.getElementById('complete-purchase').addEventListener('click', function(event) {
+                event.preventDefault();
+                completePurchase();
+                window.location.href = 'settings.html';
+            });
+    
+            function completePurchase() {
+                const orderData = {
+                    orderId: 'ORD' + new Date().getTime(), // Generate a unique order ID
+                    date: new Date().toLocaleString(),
+                    items: JSON.parse(localStorage.getItem('cart')),
+                    shipping: {
+                        name: document.getElementById('shipping-name').value,
+                        address: document.getElementById('shipping-address').value,
+                        city: document.getElementById('shipping-city').value,
+                        state: document.getElementById('shipping-state').value,
+                        country: document.getElementById('shipping-country').value,
+                        zip: document.getElementById('shipping-zip').value
+                    },
+                    payment: {
+                        name: document.getElementById('card-name').value,
+                        number: document.getElementById('card-number').value,
+                        expiry: document.getElementById('card-expiry').value,
+                        cvc: document.getElementById('card-cvc').value
+                    },
+                    status: 'Pending'
+                };
+    
+                let orders = JSON.parse(localStorage.getItem('orders')) || [];
+                orders.push(orderData);
+                localStorage.setItem('orders', JSON.stringify(orders));
+                alert('Purchase completed successfully!');
+                localStorage.removeItem('cart'); // Clear the cart after purchase
+    
+                // Add these lines to reset cart quantity to 0
+                localStorage.setItem('cartQuantity', '0'); // Reset cart quantity in localStorage
+                updateCartCount(); // Update cart quantity display
+            }
+    
+            function updateCartCount() {
+                const cartQty = document.querySelector('.cart-qty');
+                cartQty.textContent = localStorage.getItem('cartQuantity'); // Use the stored cart quantity
+            }
+    
+            // Ensure the cart quantity is displayed correctly on load
+            updateCartCount();
+        });
+    </script>
+    
+</body>
+</html>

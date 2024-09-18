@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body class="scroll-animation">
+    <header>
+        <div class="container">
+            <div id="loading-overlay" class="loading-overlay">
+                <div class="loader"></div>
+            </div>
+            <nav class="header">
+                <div class="logo">
+                    <a href="index.html">TechTrove.</a>
+                </div>
+                <div class="promo-banner">
+                    <p id="promo-banner-message">Free shipping on orders over ₱25,000!</p>
+                </div>
+                <div class="menu-right">
+                    <button class="cart-btn" id="cart-btn"><i class="fas fa-shopping-cart"></i><small
+                            class="cart-qty">0</small></button>
+                    <div id="auth-container"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Navigation -->
+    <nav class="main-nav">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Shop</a></li>
+                <li><a href="index.html#about-us">About Us</a></li>
+                <li><a href="#support">Support</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Profile Content -->
+    <div class="profile-wrapper">
+        <main class="profile-content">
+            <h1>My Profile</h1>
+            <form id="profile-form" class="profile-form">
+                <div class="profile-pic">
+                    <img src="image/default-profile.webp" alt="Profile Picture" id="profile-pic-img">
+                    <input type="file" id="profile-pic-input" accept="image/*">
+                    <label for="profile-pic-input" class="profile-pic-label">Select Image</label>
+                    <p>File size: maximum 1 MB<br>File extension: .JPEG, .PNG</p>
+                </div>
+                <div class="profile-details">
+                    <div class="profile-row">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" readonly>
+                    </div>
+                    <div class="profile-row">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="profile-row">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="profile-row">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                    </div>
+                    <div class="profile-row">
+                        <label for="street">Street Address:</label>
+                        <input type="text" id="street" name="street" placeholder="Enter your street address" required>
+                    </div>
+                    <div class="profile-row">
+                        <label for="city">City:</label>
+                        <input type="text" id="city" name="city" placeholder="Enter your city" required>
+                    </div>
+                    <div class="profile-row">
+                        <label for="state">State/Province:</label>
+                        <input type="text" id="state" name="state" placeholder="Enter your state or province" required>
+                    </div>
+                    <div class="profile-row">
+                        <label for="country">Country:</label>
+                        <input type="text" id="country" name="country" placeholder="Enter your country" required>
+                    </div>
+                    <div class="profile-row">
+                        <label for="zip">Zip Code:</label>
+                        <input type="text" id="zip" name="zip" placeholder="Enter your zip code" required>
+                    </div>
+                    <div class="profile-row">
+                        <label for="gender">Gender:</label>
+                        <div class="profile-gender">
+                            <input type="radio" id="male" name="gender" value="male">
+                            <label for="male">Male</label>
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label for="female">Female</label>
+                            <input type="radio" id="other" name="gender" value="other">
+                            <label for="other">Other</label>
+                        </div>
+                    </div>
+                    <div class="profile-row">
+                        <label for="dob">Date of Birth:</label>
+                        <input type="date" id="dob" name="dob" required>
+                    </div>
+                </div>
+                <button type="submit" class="profile-save-btn">Save Profile</button>
+            </form>
+        </main>
+    </div>
+
+    <!-- Login Modal -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeLoginModal()">&times;</span>
+            <div class="login-container">
+                <h2>Welcome Back!</h2>
+                <p>Please login to continue.</p>
+                <form id="login-form">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <button type="submit">Login</button>
+                </form>
+                <div class="signup-link">
+                    <p>Don't have an account? <a href="signup.html">Sign up here</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="support">
+        <div class="container">
+            <div class="footer-content">
+                <div class="address">
+                    <h3>ITP104L Finals Project</h3>
+                    <span>GROUP MEMBERS:</span>
+                    <p>Co, Jensen Allen Y.<br>De Castro, Justine Raineir<br>Quinto, Ralph Guerson F.</p>
+                </div>
+                <div class="customer-service">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Order Tracking</a></li>
+                        <li><a href="#">Returns & Exchanges</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="legal">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                <div class="stay-connected">
+                    <h3>Stay Connected</h3>
+                    <p>Join our newsletter for exclusive deals and the latest tech news:</p>
+                    <input type="text" placeholder="Your Email">
+                    <button>Subscribe</button>
+                    <p>Follow us on social media:</p>
+                    <ul class="social                    -media">
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>© 2024 All rights reserved. Design by <a href="index.html">CoDeCastroQuinto</a></p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const defaultProfilePicUrl = "image/default-profile.webp";
+            const profilePicImg = document.getElementById("profile-pic-img");
+            profilePicImg.src = defaultProfilePicUrl;
+            loadProfile();
+
+            const profilePicInput = document.getElementById("profile-pic-input");
+            profilePicInput.addEventListener("change", (event) => {
+                const file = event.target.files[0];
+                if (file) {
+                    const reader = new FileReader();
+                    reader.onload = () => {
+                        profilePicImg.src = reader.result;
+                    };
+                    reader.readAsDataURL(file);
+                }
+            });
+
+            const profileForm = document.getElementById("profile-form");
+            profileForm.addEventListener("submit", (event) => {
+                event.preventDefault();
+                saveProfile();
+            });
+
+            function saveProfile() {
+                const profileData = {
+                    username: document.getElementById("username").value,
+                    name: document.getElementById("name").value,
+                    email: document.getElementById("email").value,
+                    phone: document.getElementById("phone").value,
+                    gender: document.querySelector("input[name='gender']:checked").value,
+                    dob: document.getElementById("dob").value,
+                    profilePic: profilePicImg.src !== defaultProfilePicUrl ? profilePicImg.src : "",
+                    street: document.getElementById("street").value,
+                    city: document.getElementById("city").value,
+                    state: document.getElementById("state").value,
+                    country: document.getElementById("country").value,
+                    zip: document.getElementById("zip").value
+                };
+
+                localStorage.setItem("profileData", JSON.stringify(profileData));
+                alert("Profile saved successfully!");
+            }
+
+            function loadProfile() {
+                const savedProfile = localStorage.getItem("profileData");
+                if (savedProfile) {
+                    const profileData = JSON.parse(savedProfile);
+                    document.getElementById("username").value = profileData.username;
+                    document.getElementById("name").value = profileData.name;
+                    document.getElementById("email").value = profileData.email;
+                    document.getElementById("phone").value = profileData.phone;
+                    document.querySelector(`input[name='gender'][value='${profileData.gender}']`).checked = true;
+                    document.getElementById("dob").value = profileData.dob;
+                    if (profileData.profilePic) {
+                        profilePicImg.src = profileData.profilePic;
+                    }
+                    document.getElementById("street").value = profileData.street;
+                    document.getElementById("city").value = profileData.city;
+                    document.getElementById("state").value = profileData.state;
+                    document.getElementById("country").value = profileData.country;
+                    document.getElementById("zip").value = profileData.zip;
+                } else {
+                    const loggedInUser = localStorage.getItem('currentUser');
+                    if (loggedInUser) {
+                        const currentUserData = JSON.parse(loggedInUser);
+                        document.getElementById("username").value = currentUserData.username;
+                    }
+                    profilePicImg.src = defaultProfilePicUrl;
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

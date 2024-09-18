@@ -1,0 +1,308 @@
+[
+    {
+        "name": "iPhone 15 Pro",
+        "displayImage": "iphone-15-p-pm-model.webp",
+        "image": "iphone 15pro.jpg",
+        "description": "The latest iPhone with advanced features.",
+        "price": 1277.82,
+        "variants": [
+            {
+                "name": "iPhone 15 Pro",
+                "price": 1277.82,
+                "image": "iphone-15-pro-1.webp",
+                "colors": [
+                    {
+                        "name": "Natural Titanium",
+                        "hex": "#d9d9d6",
+                        "image": "iphone-15-pro-natural.webp"
+                    },
+                    {
+                        "name": "Blue Titanium",
+                        "hex": "#647480",
+                        "image": "iphone-15-pro-blue.webp"
+                    },
+                    {
+                        "name": "White Titanium",
+                        "hex": "#f2f2f7",
+                        "image": "iphone-15-pro-white.webp"
+                    },
+                    {
+                        "name": "Black Titanium",
+                        "hex": "#1d1d1f",
+                        "image": "iphone-15-pro-black.webp"
+                    }
+                ],
+                "storages": [
+                    {
+                        "size": "128GB",
+                        "price": 1277.82,
+                        "available": true
+                    },
+                    {
+                        "size": "256GB",
+                        "price": 1403.82,
+                        "available": true
+                    },
+                    {
+                        "size": "512GB",
+                        "price": 1619.82,
+                        "available": true
+                    },
+                    {
+                        "size": "1TB",
+                        "price": 1835.82,
+                        "available": true
+                    }
+                ]
+            },
+            {
+                "name": "iPhone 15 Pro Max",
+                "price": 1529.82,
+                "image": "iphone-15-pm-1.webp",
+                "colors": [
+                    {
+                        "name": "Natural Titanium",
+                        "hex": "#d9d9d6",
+                        "image": "iphone-15-pm-natural.webp"
+                    },
+                    {
+                        "name": "Blue Titanium",
+                        "hex": "#647480",
+                        "image": "iphone-15-pm-blue.webp"
+                    },
+                    {
+                        "name": "White Titanium",
+                        "hex": "#f2f2f7",
+                        "image": "iphone-15-pm-white.webp"
+                    },
+                    {
+                        "name": "Black Titanium",
+                        "hex": "#1d1d1f",
+                        "image": "iphone-15-pm-black.webp"
+                    }
+                ],
+                "storages": [
+                    {
+                        "size": "128GB",
+                        "price": 1529.82,
+                        "available": false
+                    },
+                    {
+                        "size": "256GB",
+                        "price": 1529.82,
+                        "available": true
+                    },
+                    {
+                        "size": "512GB",
+                        "price": 1745.82,
+                        "available": true
+                    },
+                    {
+                        "size": "1TB",
+                        "price": 1961.82,
+                        "available": true
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Samsung Galaxy S24",
+        "displayImage": "s24-ultra-display.jpeg",
+        "image": "s24 ultra.jpg",
+        "description": "A high-end smartphone with powerful features and an advanced display.",
+        "price": 1439.82,
+        "variants": [
+            {
+                "name": "Samsung Galaxy S24",
+                "price": 1439.82,
+                "image": "s24-display.jpeg",
+                "colors": [
+                    {
+                        "name": "Onyx Black",
+                        "hex": "#000000",
+                        "image": "s24-black.avif"
+                    },
+                    {
+                        "name": "Marble Gray",
+                        "hex": "#808080",
+                        "image": "s24-gray.avif"
+                    },
+                    {
+                        "name": "Cobalt Violet",
+                        "hex": "#8e44ad",
+                        "image": "s24-violet.avif"
+                    },
+                    {
+                        "name": "Amber Yellow",
+                        "hex": "#f4d03f",
+                        "image": "s24-yellow.avif"
+                    }
+                ],
+                "storages": [
+                    {
+                        "size": "128GB",
+                        "price": 1439.82,
+                        "available": true
+                    },
+                    {
+                        "size": "256GB",
+                        "price": 1529.82,
+                        "available": true
+                    },
+                    {
+                        "size": "512GB",
+                        "price": 1619.82,
+                        "available": false
+                    },
+                    {
+                        "size": "1TB",
+                        "price": 1799.82,
+                        "available": false
+                    }
+                ]
+            },
+            {
+                "name": "Samsung Galaxy S24+",
+                "price": 1709.82,
+                "image": "s24p-display.jpeg",
+                "colors": [
+                    {
+                        "name": "Onyx Black",
+                        "hex": "#000000",
+                        "image": "s24p-black.avif"
+                    },
+                    {
+                        "name": "Marble Gray",
+                        "hex": "#808080",
+                        "image": "s24p-gray.avif"
+                    },
+                    {
+                        "name": "Cobalt Violet",
+                        "hex": "#8e44ad",
+                        "image": "s24p-violet.avif"
+                    },
+                    {
+                        "name": "Amber Yellow",
+                        "hex": "#f4d03f",
+                        "image": "s24p-yellow.avif"
+                    }
+                ],
+                "storages": [
+                    {
+                        "size": "128GB",
+                        "price": 1619.82,
+                        "available": false
+                    },
+                    {
+                        "size": "256GB",
+                        "price": 1709.82,
+                        "available": true
+                    },
+                    {
+                        "size": "512GB",
+                        "price": 1799.82,
+                        "available": true
+                    },
+                    {
+                        "size": "1TB",
+                        "price": 1979.82,
+                        "available": false
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Xiaomi 14",
+        "displayImage": "xiaomi14-display.webp",
+        "image": "xiaomi 14 ultra.jpg",
+        "description": "A flagship killer with excellent specs.",
+        "price": 827.82,
+        "variants": [
+            {
+                "name": "Xiaomi 14",
+                "price": 827.82,
+                "image": "x-14-display.png",
+                "colors": [
+                    {
+                        "name": "Black",
+                        "hex": "#000000",
+                        "image": "x-14-black.webp"
+                    },
+                    {
+                        "name": "White",
+                        "hex": "#FFFFFF",
+                        "image": "x-14-white.webp"
+                    },
+                    {
+                        "name": "Green",
+                        "hex": "#008000",
+                        "image": "x-14-green.webp"
+                    }
+                ],
+                "storages": [
+                    {
+                        "size": "128GB",
+                        "price": 827.82,
+                        "available": true
+                    },
+                    {
+                        "size": "256GB",
+                        "price": 1007.82,
+                        "available": true
+                    },
+                    {
+                        "size": "512GB",
+                        "price": 1187.82,
+                        "available": false
+                    },
+                    {
+                        "size": "1TB",
+                        "price": 1367.82,
+                        "available": false
+                    }
+                ]
+            },
+            {
+                "name": "Xiaomi 14 Ultra",
+                "price": 1007.82,
+                "image": "x-14-u-display.webp",
+                "colors": [
+                    {
+                        "name": "Black",
+                        "hex": "#000000",
+                        "image": "x-14-u-black.webp"
+                    },
+                    {
+                        "name": "White",
+                        "hex": "#FFFFFF",
+                        "image": "x-14-u-white.webp"
+                    }
+                ],
+                "storages": [
+                    {
+                        "size": "128GB",
+                        "price": 1007.82,
+                        "available": false
+                    },
+                    {
+                        "size": "256GB",
+                        "price": 1007.82,
+                        "available": true
+                    },
+                    {
+                        "size": "512GB",
+                        "price": 1187.82,
+                        "available": false
+                    },
+                    {
+                        "size": "1TB",
+                        "price": 1367.82,
+                        "available": false
+                    }
+                ]
+            }
+        ]
+    }
+]

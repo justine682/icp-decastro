@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TechTrove - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body class="scroll-animation">
+    <header>
+        <div class="container">
+            <div id="loading-overlay" class="loading-overlay">
+                <div class="loader"></div>
+            </div>
+            <nav class="header">
+                <div class="logo">
+                    <a href="index.html">TechTrove.</a>
+                </div>
+                <div class="promo-banner">
+                    <p id="promo-banner-message">Free shipping on orders over $2,000+!</p>
+                </div>
+                <div class="menu-right">
+                    <button class="cart-btn" id="cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        <small class="cart-qty">0</small>
+                    </button>
+                    <div id="auth-container"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Navigation -->
+    <nav class="main-nav">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Shop</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#support">Support</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Cover Section -->
+    <section class="cover-section">
+        <img src="image/cover-image.jpg" alt="Cover Image">
+        <div class="cover-text">
+            <h1>Discover the Latest in Mobile Technology</h1>
+            <p>Find the perfect phone that fits your needs.</p>
+            <a href="products.html" class="cover-button">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="featured-products">
+        <h2 class="featured-text">FEATURED PRODUCTS</h2>
+        <div class="featured-products">
+            <div class="container">
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products Modal -->
+    <div id="product-detail-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeProductDetailModal()">&times;</span>
+            <div class="product-detail-container">
+                <h2 id="product-name">Product Name</h2>
+                <p id="product-price">From $0.00</p>
+                <img id="product-display" src="" alt="Product Display Image" class="product-detail-image">
+
+                <!-- Options Section -->
+                <div class="product-options">
+                    <!-- Model Selection -->
+                    <div class="option-group">
+                        <h3>Model. Which is best for you?</h3>
+                        <button class="option-button" id="option1">Option 1</button>
+                        <button class="option-button" id="option2">Option 2</button>
+                    </div>
+
+                    <!-- Color Selection -->
+                    <div class="option-group">
+                        <h3>Finish. Pick your favorite.</h3>
+                        <div class="color-option" id="color1" style="background-color: #ddd;"></div>
+                        <div class="color-option" id="color2" style="background-color: #ddd;"></div>
+                        <div class="color-option" id="color3" style="background-color: #ddd;"></div>
+                        <div class="color-option" id="color4" style="background-color: #ddd;"></div>
+                    </div>
+
+                    <!-- Storage Selection -->
+                    <div class="option-group">
+                        <h3>Storage. How much space do you need?</h3>
+                        <button class="storage-option" id="storage1"></button>
+                        <button class="storage-option" id="storage2"></button>
+                        <button class="storage-option" id="storage3"></button>
+                        <button class="storage-option" id="storage4"></button>
+                    </div>
+                    <!-- Add to Cart Button -->
+                    <div class="add-to-cart-container">
+                        <p id="product-price-bottom">$0.00</p>
+                        <button id="add-to-cart-button" class="add-to-cart-button disabled">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Us Section -->
+    <section id="about-us" class="about-us-section">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We are passionate about bringing the latest and greatest in mobile technology to your fingertips. Our
+                mission is to provide an unparalleled selection of mobile gadgets, accessories, and innovations to tech
+                enthusiasts everywhere.</p>
+            <p>At TechTrove, we believe that technology should be accessible to everyone. Our team is dedicated to
+                curating a diverse range of products that meet the needs of both casual users and tech enthusiasts. From
+                the latest smartphones to essential accessories, we have something for everyone.</p>
+            <p>Our commitment to quality and customer satisfaction sets us apart from the competition. We strive to
+                provide excellent customer service, fast shipping, and hassle-free returns. Our knowledgeable staff is
+                always ready to assist you with any questions or concerns.</p>
+            <p>Thank you for choosing TechTrove as your go-to source for the latest in mobile technology. We look
+                forward to serving you and helping you stay connected with the world.</p>
+        </div>
+    </section>
+    <footer id="support">
+        <div class="container">
+            <div class="footer-content">
+                <div class="address">
+                    <h3>ITP104L Finals Project</h3>
+                    <span>GROUP MEMBERS:</span>
+                    <p>Co, Jensen Allen Y.<br>De Castro, Justine Raineir<br>Quinto, Ralph Guerson F.</p>
+                </div>
+                <div class="customer-service">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Order Tracking</a></li>
+                        <li><a href="#">Returns & Exchanges</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="legal">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                <div class="stay-connected">
+                    <h3>Stay Connected</h3>
+                    <p>Join our newsletter for exclusive deals and the latest tech news:</p>
+                    <input type="text" placeholder="Your Email">
+                    <button>Subscribe</button>
+                    <p>Follow us on social media:</p>
+                    <ul class="social-media">
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>© 2024 All rights reserved. Design by <a href="index.html">CoDeCastroQuinto</a></p>
+            </div>
+        </div>
+    </footer>
+    <!-- Notification Container -->
+    <div id="notification-container" class="notification-container"></div>
+
+
+
+    <!-- Login Modal -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeLoginModal()">&times;</span>
+            <div class="login-container">
+                <h2>Welcome Back!</h2>
+                <p>Please login to continue.</p>
+                <form id="login-form">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <button type="submit">Login</button>
+                </form>
+                <div class="signup-link">
+                    <p>Don't have an account? <a href="signup.html">Sign up here</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  <!-- Include this in both index.html and products.html -->
+<div id="cart-container" class="modal cart-modal">
+    <div class="cart-modal-content">
+        <span class="close" onclick="closeCartModal()">&times;</span>
+        <div id="cart-content" class="cart-content">
+            <!-- Cart items go here -->
+            <div class="cart-item">
+                <img src="image-placeholder.jpg" alt="Product Image">
+                <div class="cart-item-details">
+                    <p class="product-name">Product Name</p>
+                    <p class="quantity">Quantity: <input type="number" value="1" min="1"></p>
+                    <p class="price">$0.00</p>
+                </div>
+                <button class="remove-item">Remove</button>
+            </div>
+        </div>
+        <div class="cart-summary">
+            <div class="voucher">
+                <input type="text" id="voucher-code" placeholder="Enter voucher code">
+                <button onclick="applyVoucher()">Apply</button>
+            </div>
+            <p id="total-amount">Total: $0</p>
+            <p id="shipping-fee">Shipping: $0</p>
+            <button class="checkout-btn" id="proceed-to-checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+</div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

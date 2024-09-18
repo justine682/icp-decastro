@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body class="scroll-animation">
+    <header>
+        <div class="container">
+            <nav class="header">
+                <div class="logo">
+                    <a href="index.html">TechTrove.</a>
+                </div>
+                <div class="promo-banner">
+                    <p id="promo-banner-message">Free shipping on orders over $2,000+!</p>
+                </div>
+                <div class="menu-right">
+                    <button class="cart-btn" id="cart-btn"><i class="fas fa-shopping-cart"></i><small
+                            class="cart-qty">0</small></button>
+                    <div id="auth-container"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Navigation -->
+    <nav class="main-nav">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Shop</a></li>
+                <li><a href="index.html#about-us">About Us</a></li>
+                <li><a href="#support">Support</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Search and Filter -->
+    <div class="search-filter-container">
+        <div class="search-row">
+            <input type="text" id="search-bar" placeholder="Search products by name">
+            <button id="search-button">Search</button>
+            <button id="reset-button">Reset Filter</button>
+        </div>
+        <div class="filters-row">
+            <select id="category-filter">
+                <option value="all">All Categories</option>
+                <option value="iphone">iPhone</option>
+                <option value="samsung">Samsung</option>
+                <option value="xiaomi">Xiaomi</option>
+                <option value="oppo">Oppo</option>
+                <option value="poco">Poco</option>
+            </select>
+            <select id="price-filter">
+                <option value="all">All Prices</option>
+                <option value="0-499">$0 - $499</option>
+                <option value="500-999">$500 - $999</option>
+                <option value="1000-1999">$1,000 - $1,999</option>
+                <option value="2000+">$2,000+</option>
+            </select>
+            <select id="sort-filter">
+                <option value="name-asc">Name (A - Z)</option>
+                <option value="name-desc">Name (Z - A)</option>
+                <option value="price-high-low">Price (High - Low)</option>
+                <option value="price-low-high">Price (Low - High)</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Product List -->
+    <h2 class="featured-text">PRODUCTS</h2>
+    <div id="product-list" class="product-list"></div>
+
+    <!-- Phone Modal -->
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeProductModal()">&times;</span>
+            <div class="product-detail-container">
+                <h2 id="product-name">Product Name</h2>
+                <p id="product-price">From $0.00</p>
+                <img id="product-display" src="" alt="Product Display Image" class="product-detail-image">
+
+                <!-- Options Section -->
+                <div class="product-options">
+                    <!-- Model Selection -->
+                    <div class="option-group">
+                        <h3>Model</h3>
+                        <button class="option-button" id="option1">Option 1</button>
+                    </div>
+
+                    <!-- Color Selection -->
+                    <div class="option-group">
+                        <h3>Finish. Pick your favorite.</h3>
+                        <div class="color-option" id="color1" style="background-color: #ddd;"></div>
+                        <div class="color-option" id="color2" style="background-color: #ddd;"></div>
+                        <div class="color-option" id="color3" style="background-color: #ddd;"></div>
+                        <div class="color-option" id="color4" style="background-color: #ddd;"></div>
+                    </div>
+
+                    <!-- Storage Selection -->
+                    <div class="option-group">
+                        <h3>Storage. How much space do you need?</h3>
+                        <button class="storage-option" id="storage1"></button>
+                        <button class="storage-option" id="storage2"></button>
+                        <button class="storage-option" id="storage3"></button>
+                        <button class="storage-option" id="storage4"></button>
+                    </div>
+                    <!-- Add to Cart Button -->
+                    <div class="add-to-cart-container">
+                        <p id="product-price-bottom">$0.00</p>
+                        <button id="add-to-cart-button" class="add-to-cart-button disabled">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeLoginModal()">&times;</span>
+            <div class="login-container">
+                <h2>Welcome Back!</h2>
+                <p>Please login to continue.</p>
+                <form id="login-form">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <button type="submit">Login</button>
+                </form>
+                <div class="signup-link">
+                    <p>Don't have an account? <a href="signup.html">Sign up here</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="cart-container" class="modal cart-modal">
+        <div class="cart-modal-content">
+            <span class="close" onclick="closeCartModal()">&times;</span>
+            <div id="cart-content" class="cart-content">
+                <div class="cart-item">
+                    <img src="image-placeholder.jpg" alt="Product Image">
+                    <div class="cart-item-details">
+                        <p class="product-name">Product Name</p>
+                        <p class="quantity">Quantity: <input type="number" value="1" min="1"></p>
+                        <p class="price">$0.00</p>
+                    </div>
+                    <button class="remove-item">Remove</button>
+                </div>
+            </div>
+            <div class="cart-summary">
+                <div class="voucher">
+                    <input type="text" id="voucher-code" placeholder="Enter voucher code">
+                    <button onclick="applyVoucher()">Apply</button>
+                </div>
+                <p id="total-amount">Total: $0</p>
+                <p id="shipping-fee">Shipping: $0</p>
+                <button class="checkout-btn" id="proceed-to-checkout-btn">Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer id="support">
+        <div class="container">
+            <div class="footer-content">
+                <div class="address">
+                    <h3>ITP104L Finals Project</h3>
+                    <span>GROUP MEMBERS:</span>
+                    <p>Co, Jensen Allen Y.<br>De Castro, Justine Raineir<br>Quinto, Ralph Guerson F.</p>
+                </div>
+                <div class="customer-service">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Order Tracking</a></li>
+                        <li><a href="#">Returns & Exchanges</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="legal">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                <div class="stay-connected">
+                    <h3>Stay Connected</h3>
+                    <p>Join our newsletter for exclusive deals and the latest tech news:</p>
+                    <input type="text" placeholder="Your Email">
+                    <button>Subscribe</button>
+                    <p>Follow us on social media:</p>
+                    <ul class="social-media">
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>© 2024 All rights reserved. Design by <a href="index.html">CoDeCastroQuinto</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Notification Container -->
+    <div id="notification-container" class="notification-container"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>

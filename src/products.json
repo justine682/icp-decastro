@@ -1,0 +1,1006 @@
+[
+  {
+    "name": "iPhone 13",
+    "category":"iPhone",
+    "displayImage": "iphone_13.png",
+    "image": "iphone_13.png",
+    "description": "The iPhone 13 features the A15 Bionic chip, an improved camera system, and a durable design with a Super Retina XDR display.",
+    "price": 1699.99,
+    "variants": [
+      {
+        "name": "iPhone 13",
+        "price": 1699.99,
+        "image": "iphone_13.png",
+        "colors": [
+          {
+            "name": "Red",
+            "hex": "#FF0000",
+            "image": "iphone_13_red.webp"
+          },
+          {
+            "name": "Blue",
+            "hex": "#6495ed",
+            "image": "iphone_13_blue.webp"
+          },
+          {
+            "name": "Black",
+            "hex": "#000000",
+            "image": "iphone_13_midnight.webp"
+          }
+        ],
+        "storages": [
+          {
+            "size": "128GB",
+            "price": 1699.99,
+            "available": true
+          },
+          {
+            "size": "256GB",
+            "price": 1799.99,
+            "available": true
+          },
+          {
+            "size": "512GB",
+            "price": 1899.99,
+            "available": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "iPhone 14",
+    "category":"iPhone",
+    "displayImage": "iphone_14.png",
+    "image": "iphone_14.png",
+    "description": "The iPhone 14 offers a powerful A15 Bionic chip, an advanced camera system, and a vibrant Super Retina XDR display.",
+    "price": 1799.99,
+    "variants": [
+      {
+        "name": "iPhone 14",
+        "price": 1799.99,
+        "image": "iphone_14.png",
+        "colors": [
+          {
+            "name": "Red",
+            "hex": "#FF0000",
+            "image": "iphone_14_red.webp"
+          },
+          {
+            "name": "Blue",
+            "hex": "#6495ed",
+            "image": "iphone_14_blue.webp"
+          },
+          {
+            "name": "Midnight",
+            "hex": "#000000",
+            "image": "iphone_14_midnight.webp"
+          },
+          {
+            "name": "Yellow",
+            "hex": "#ffff00",
+            "image": "iphone_14_yellow.webp"
+          }
+        ],
+        "storages": [
+          {
+            "size": "128GB",
+            "price": 1799.99,
+            "available": true
+          },
+          {
+            "size": "256GB",
+            "price": 1899.99,
+            "available": true
+          },
+          {
+            "size": "512GB",
+            "price": 1999.99,
+            "available": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "iPhone 14 Plus",
+    "category":"iPhone",
+    "displayImage": "iphone_14_plus.png",
+    "image": "iphone_14_plus.png",
+    "description": "The iPhone 14 Plus features the most advanced camera system ever on iPhone, Super Retina XDR display with ProMotion, and the fastest smartphone chip ever.",
+    "price": 1099.99,
+    "variants": [
+      {
+        "name": "iPhone 14 Plus",
+        "price": 1099.99,
+        "image": "iphone_14_plus.png",
+        "colors": [
+          {
+            "name": "Red",
+            "hex": "#ff0000",
+            "image": "iphone_14_plus_red.webp"
+          },
+          {
+            "name": "Blue",
+            "hex": "#6495ed",
+            "image": "iphone_14_plus_blue.webp"
+          },
+          {
+            "name": "Midnight",
+            "hex": "#000000",
+            "image": "iphone_14_plus_midnight.webp"
+          },
+          {
+            "name": "Purple",
+            "hex": "#9370db",
+            "image": "iphone_14_plus_purple.webp"
+          }
+        ],
+        "storages": [
+          {
+            "size": "128GB",
+            "price": 1099.99,
+            "available": false
+          },
+          {
+            "size": "256GB",
+            "price": 1199.99,
+            "available": true
+          },
+          {
+            "size": "512GB",
+            "price": 1299.99,
+            "available": false
+          },
+          {
+            "size": "1TB",
+            "price": 1399.99,
+            "available": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "iPhone 15",
+    "category":"iPhone",
+    "displayImage": "iphone_15.png",
+    "image": "iphone_15.png",
+    "description": "The iPhone 15 features a new design, enhanced camera system, and the powerful A16 Bionic chip for unparalleled performance.",
+    "price": 1199.99,
+    "variants": [
+      {
+        "name": "iPhone 15",
+        "price": 1199.99,
+        "image": "iphone_15.png",
+        "colors": [
+          {
+            "name": "Yellow",
+            "hex": "#ffff00",
+            "image": "iphone_15_yellow.png"
+          },
+          {
+            "name": "Black",
+            "hex": "#000000",
+            "image": "iphone_15_black.png"
+          },
+          {
+            "name": "Green",
+            "hex": "#008000",
+            "image": "iphone_15_green.png"
+          },
+          {
+            "name": "Pink",
+            "hex": "#ffc0cb",
+            "image": "iphone_15_pink.png"
+          }
+        ],
+        "storages": [
+          {
+            "size": "128GB",
+            "price": 1199.99,
+            "available": true
+          },
+          {
+            "size": "256GB",
+            "price": 1299.99,
+            "available": true
+          },
+          {
+            "size": "512GB",
+            "price": 1399.99,
+            "available": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "iPhone 15 Plus",
+    "category":"iPhone",
+    "displayImage": "iphone_15_plus.png",
+    "image": "iphone_15_plus.png",
+    "description": "The iPhone 15 Plus delivers Pro camera system, Super Retina XDR display with ProMotion, and the fastest smartphone chip ever.",
+    "price": 1399.99,
+    "variants": [
+      {
+        "name": "iPhone 15 Plus",
+        "price": 1399.99,
+        "image": "iphone_15_plus.png",
+        "colors": [
+          {
+            "name": "Black",
+            "hex": "#000000",
+            "image": "iphone_15_plus_black.png"
+          },
+          {
+            "name": "Blue",
+            "hex": "#6495ed",
+            "image": "iphone_15_plus_blue.webp"
+          },
+          {
+            "name": "Pink",
+            "hex": "#ffc0cb",
+            "image": "iphone_15_plus_pink.png"
+          },
+          {
+            "name": "Green",
+            "hex": "#008000",
+            "image": "iphone_15_plus_green.png"
+          }
+        ],
+        "storages": [
+          {
+            "size": "128GB",
+            "price": 1399.99,
+            "available": true
+          },
+          {
+            "size": "256GB",
+            "price": 1499.99,
+            "available": true
+          },
+          {
+            "size": "512GB",
+            "price": 1599.99,
+            "available": true
+          },
+          {
+            "size": "1TB",
+            "price": 1699.99,
+            "available": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "iPhone 15 Pro",
+    "category":"iPhone",
+    "displayImage": "iphone_15_pro.png",
+    "image": "iphone_15_pro.png",
+    "description": "The iPhone 15 Pro offers an advanced camera system, a new generation A16 Bionic chip, and an enhanced Super Retina XDR display.",
+    "price": 1499.99,
+    "variants": [
+      {
+        "name": "iPhone 15 Pro",
+        "price": 1499.99,
+        "image": "iphone_15_pro.png",
+        "colors": [
+          {
+            "name": "Natural Titanium",
+            "hex": "#d9d9d6",
+            "image": "iphone-15-pro-natural.webp"
+          },
+          {
+            "name": "Blue Titanium",
+            "hex": "#647480",
+            "image": "iphone-15-pro-blue.webp"
+          },
+          {
+            "name": "White Titanium",
+            "hex": "#f2f2f7",
+            "image": "iphone-15-pro-white.webp"
+          },
+          {
+            "name": "Black Titanium",
+            "hex": "#1d1d1f",
+            "image": "iphone-15-pro-black.webp"
+          }
+        ],
+        "storages": [
+          {
+            "size": "128GB",
+            "price": 1499.99,
+            "available": true
+          },
+          {
+            "size": "256GB",
+            "price": 1599.99,
+            "available": true
+          },
+          {
+            "size": "512GB",
+            "price": 1699.99,
+            "available": true
+          },
+          {
+            "size": "1TB",
+            "price": 1799.99,
+            "available": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "iPhone 15 Pro Max",
+    "category":"iPhone",
+    "displayImage": "iphone_15_pro_max.png",
+    "image": "iphone_15_pro_max.png",
+    "description": "The iPhone 15 Pro Max brings the most advanced camera system, the new A16 Bionic chip, and a larger Super Retina XDR display.",
+    "price": 1599.99,
+    "variants": [
+      {
+        "name": "iPhone 15 Pro Max",
+        "price": 1599.99,
+        "image": "iphone_15_pro_max.png",
+        "colors": [
+          {
+            "name": "Natural Titanium",
+            "hex": "#d9d9d6",
+            "image": "iphone-15-pm-natural.webp"
+          },
+          {
+            "name": "Blue Titanium",
+            "hex": "#647480",
+            "image": "iphone-15-pm-blue.webp"
+          },
+          {
+            "name": "White Titanium",
+            "hex": "#f2f2f7",
+            "image": "iphone-15-pm-white.webp"
+          }
+        ],
+        "storages": [
+          {
+            "size": "128GB",
+            "price": 1599.99,
+            "available": true
+          },
+          {
+            "size": "256GB",
+            "price": 1699.99,
+            "available": true
+          },
+          {
+            "size": "512GB",
+            "price": 1799.99,
+            "available": true
+          },
+          {
+            "size": "1TB",
+            "price": 1999.99,
+            "available": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "iPhone SE",
+    "category":"iPhone",
+    "displayImage": "iphone_se.png",
+    "image": "iphone_se.png",
+    "description": "The iPhone SE offers the power of the A14 Bionic chip, a great camera system, and a stunning Retina HD display.",
+    "price": 399.99,
+    "variants": [
+      {
+        "name": "iPhone SE",
+        "price": 399.99,
+        "image": "iphone_se.png",
+        "colors": [
+          {
+            "name": "Red",
+            "hex": "#ff0000",
+            "image": "iphone_se_red.webp"
+          },
+          {
+            "name": "Starlight",
+            "hex": "#ffffff",
+            "image": "iphone_se_starlight.webp"
+          },
+          {
+            "name": "Midnight",
+            "hex": "#000000",
+            "image": "iphone_se_midnight.webp"
+          }
+        ],
+        "storages": [
+          {
+            "size": "64GB",
+            "price": 399.99,
+            "available": true
+          },
+          {
+            "size": "128GB",
+            "price": 499.99,
+            "available": true
+          },
+          {
+            "size": "256GB",
+            "price": 599.99,
+            "available": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Samsung Galaxy S24 Ultra",
+    "category":"Samsung",
+    "displayImage": "samsung_galaxy_s24_ultra.webp",
+    "image": "samsung_galaxy_s24_ultra.webp",
+    "description": "The Samsung Galaxy S24 Ultra offers a powerful Exynos 2200 chip, a versatile camera system, and a stunning AMOLED display.",
+    "price": 1199.99,
+    "variants": [
+      {
+        "name": "Samsung Galaxy S24 Ultra",
+        "price": 1199.99,
+        "image": "samsung_galaxy_s24_ultra_titanium_gray.webp",
+        "colors": [
+          {
+            "name": "Titanium Black",
+            "hex": "#000000",
+            "image": "samsung_galaxy_s24_ultra_titanium_black.webp"
+          },
+          {
+            "name": "Titanium Gray",
+            "hex": "#808080",
+            "image": "samsung_galaxy_s24_ultra_titanium_gray.webp"
+          },
+          {
+            "name": "Titanium Violet",
+            "hex": "#ee82ee",
+            "image": "samsung_galaxy_s24_ultra_titanium_violet.webp"
+          },
+          {
+            "name": "Titanium Yellow",
+            "hex": "#eee600",
+            "image": "samsung_galaxy_s24_ultra_titanium_yellow.webp"
+          }
+        ],
+        "storages": [
+          {
+            "size": "128GB",
+            "price": 1199.99,
+            "available": true
+          },
+          {
+            "size": "256GB",
+            "price": 1259.99,
+            "available": true
+          },
+          {
+            "size": "512GB",
+            "price": 1359.99,
+            "available": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Samsung Galaxy S23",
+    "category":"Samsung",
+    "displayImage": "samsung_galaxy_s23_cream.webp",
+    "image": "samsung_galaxy_s23_cream.webp",
+    "description": "The Samsung Galaxy S23 delivers high performance with the Exynos 2200 chip, a versatile camera system, and a vibrant AMOLED display.",
+    "price": 1099.99,
+    "variants": [
+      {
+        "name": "Samsung Galaxy S23",
+        "price": 1099.99,
+        "image": "samsung_galaxy_s23_cream.webp",
+        "colors": [
+          {
+            "name": "Cream",
+            "hex": "#FF0000",
+            "image": "samsung_galaxy_s23_cream.webp"
+          },
+          {
+            "name": "Phantom Black",
+            "hex": "#000000",
+            "image": "samsung_galaxy_s23_phantom_black.webp"
+          },
+          {
+            "name": "Lavender",
+            "hex": "#000000",
+            "image": "samsung_galaxy_s23_lavender.png"
+          },
+          {
+            "name": "Green",
+            "hex": "#008000",
+            "image": "samsung_galaxy_s23_green.webp"
+          }
+        ],
+        "storages": [
+          {
+            "size": "128GB",
+            "price": 1099.99,
+            "available": true
+          },
+          {
+            "size": "256GB",
+            "price": 1199.99,
+            "available": true
+          },
+          {
+            "size": "512GB",
+            "price": 1299.99,
+            "available": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Samsung Galaxy S22 Ultra",
+    "category":"Samsung",
+    "displayImage": "samsung_galaxy_s22_ultra.png",
+    "image": "samsung_galaxy_s22_ultra.png",
+    "description": "The Samsung Galaxy S22 Ultra features a powerful camera system, high performance with Exynos 2200, and a large AMOLED display.",
+    "price": 1199.99,
+    "variants": [
+      {
+        "name": "Samsung Galaxy S22 Ultra",
+        "price": 1199.99,
+        "image": "samsung_galaxy_s22_ultra.png",
+        "colors": [
+          {
+            "name": "Burgundy",
+            "hex": "#800020",
+            "image": "samsung_galaxy_s22_ultra_burgundy.jpg"
+          },
+          {
+            "name": "White",
+            "hex": "#ffffff",
+            "image": "samsung_galaxy_s22_ultra_white.jpg"
+          },
+          {
+            "name": "Black",
+            "hex": "#000000",
+            "image": "samsung_galaxy_s22_ultra_black.jpg"
+          },
+          {
+            "name": "Green",
+            "hex": "#008000",
+            "image": "samsung_galaxy_s22_ultra_green.jpg"
+          }
+        ],
+        "storages": [
+          {
+            "size": "128GB",
+            "price": 1199.99,
+            "available": true
+          },
+          {
+            "size": "256GB",
+            "price": 1259.99,
+            "available": true
+          },
+          {
+            "size": "512GB",
+            "price": 1359.99,
+            "available": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Samsung Galaxy A50",
+    "category":"Samsung",
+    "displayImage": "samsung_galaxy_a50.png",
+    "image": "samsung_galaxy_a50.png",
+    "description": "The Samsung Galaxy A50 offers a solid performance with Exynos 9610, versatile camera setup, and an Infinity-U display.",
+    "price": 1199.99,
+    "variants": [
+      {
+        "name": "Samsung Galaxy A50",
+        "price": 1199.99,
+        "image": "samsung_galaxy_a50.png",
+        "colors": [
+          {
+            "name": "White",
+            "hex": "#ffffff",
+            "image": "samsung_galaxy_a50_white.avif"
+          },
+          {
+            "name": "Blue",
+            "hex": "#6495ed",
+            "image": "samsung_galaxy_a50_blue.avif"
+          },
+          {
+            "name": "Black",
+            "hex": "#000000",
+            "image": "samsung_galaxy_a50_black.avif"
+          }
+        ],
+        "storages": [
+          {
+            "size": "64GB",
+            "price": 1199.99,
+            "available": true
+          },
+          {
+            "size": "128GB",
+            "price": 1299.99,
+            "available": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Samsung Galaxy A80",
+    "category":"Samsung",
+    "displayImage": "samsung_galaxy_a80.png",
+    "image": "samsung_galaxy_a80.png",
+    "description": "The Samsung Galaxy A80 features a unique rotating camera, high performance, and a large Super AMOLED display.",
+    "price": 1099.99,
+    "variants": [
+      {
+        "name": "Samsung Galaxy A80",
+        "price": 1099.99,
+        "image": "samsung_galaxy_a80.png",
+        "colors": [
+          {
+            "name": "Blackpink Edition",
+            "hex": "#000000",
+            "image": "samsung_galaxy_a80_blackpink edition.avif"
+          }
+        ],
+        "storages": [
+          {
+            "size": "128GB",
+            "price": 1099.99,
+            "available": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Xiaomi 14 Ultra",
+    "category":"Xiaomi",
+    "displayImage": "xiaomi_14_ultra1.png",
+    "image": "xiaomi_14_ultra1.png",
+    "description": "The Xiaomi 14 Ultra offers a high-performance Snapdragon 8 Gen 2 chip, a powerful camera system, and a stunning AMOLED display.",
+    "price": 1399.99,
+    "variants": [
+      {
+        "name": "Xiaomi 14 Ultra",
+        "price": 1399.99,
+        "image": "xiaomi_14_ultra1.png",
+        "colors": [
+          {
+            "name": "Red",
+            "hex": "#FF0000",
+            "image": "xiaomi_14_ultra1.png"
+          }
+        ],
+        "storages": [
+          {
+            "size": "128GB",
+            "price": 1399.99,
+            "available": true
+          },
+          {
+            "size": "256GB",
+            "price": 1459.99,
+            "available": true
+          },
+          {
+            "size": "512GB",
+            "price": 1559.99,
+            "available": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Xiaomi 13 Ultra",
+    "category":"Xiaomi",
+    "displayImage": "xiaomi_13_ultra.png",
+    "image": "xiaomi_13_ultra.png",
+    "description": "The Xiaomi 13 Ultra offers a high-performance Snapdragon 8 Gen 2 chip, a powerful camera system, and a stunning LTPO AMOLED display.",
+    "price": 1299.99,
+    "variants": [
+      {
+        "name": "Xiaomi 13 Ultra",
+        "price": 1299.99,
+        "image": "xiaomi_13_ultra.png",
+        "colors": [
+          {
+            "name": "Red",
+            "hex": "#FF0000",
+            "image": "xiaomi_13_ultra_red.webp"
+          },
+          {
+            "name": "Floral Green",
+            "hex": "#ff0000",
+            "image": "xiaomi_13_ultra_floral_green.png"
+          },
+          {
+            "name": "Black",
+            "hex": "#000000",
+            "image": "xiaomi_13_ultra_black.png"
+          }
+        ],
+        "storages": [
+          {
+            "size": "64GB",
+            "price": 1299.99,
+            "available": true
+          },
+          {
+            "size": "128GB",
+            "price": 1399.99,
+            "available": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Xiaomi 12 Ultra",
+    "category":"Xiaomi",
+    "displayImage": "xiaomi_14_ultra1.png",
+    "image": "xiaomi_14_ultra1.png",
+    "description": "The Xiaomi 12 Ultra offers a high-performance Snapdragon 8 Gen 1 chip, a powerful camera system, and a stunning AMOLED display.",
+    "price": 1099.99,
+    "variants": [
+      {
+        "name": "Xiaomi 12 Ultra",
+        "price": 1099.99,
+        "image": "xiaomi_14_ultra1.png",
+        "colors": [
+          {
+            "name": "Black",
+            "hex": "#000000",
+            "image": "xiaomi_12_ultra_black.png"
+          }
+        ],
+        "storages": [
+          {
+            "size": "64GB",
+            "price": 1199.99,
+            "available": true
+          },
+          {
+            "size": "128GB",
+            "price": 1299.99,
+            "available": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Poco F6 Pro",
+    "category":"Poco",
+    "displayImage": "poco_f6_pro.png",
+    "image": "poco_f6_pro.png",
+    "description": "The Poco F6 Pro offers a high-performance Snapdragon 8 Gen 2 chip, a powerful camera system, and a stunning AMOLED display.",
+    "price": 1199.99,
+    "variants": [
+      {
+        "name": "Poco F6 Pro",
+        "price": 1199.99,
+        "image": "poco_f6_pro.png",
+        "colors": [
+          {
+            "name": "Black",
+            "hex": "#000000",
+            "image": "poco_f6_pro_black.jpg"
+          },
+          {
+            "name": "White",
+            "hex": "#ffffff",
+            "image": "poco_f6_pro_white.jpg"
+          }
+        ],
+        "storages": [
+          {
+            "size": "64GB",
+            "price": 1299.99,
+            "available": true
+          },
+          {
+            "size": "128GB",
+            "price": 1399.99,
+            "available": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Poco X6 Pro",
+    "category":"Poco",
+    "displayImage": "poco_x6_pro.png",
+    "image": "poco_x6_pro.png",
+    "description": "The Poco X6 Pro offers a high-performance MediaTek chip, a powerful camera system, and a stunning AMOLED display.",
+    "price": 1399.99,
+    "variants": [
+      {
+        "name": "Poco X6 Pro",
+        "price": 1399.99,
+        "image": "poco_x6_pro.png",
+        "colors": [
+          {
+            "name": "Yellow",
+            "hex": "#ffff00",
+            "image": "poco_x6_pro_yellow.jpg"
+          },
+          {
+            "name": "Gray",
+            "hex": "#808080",
+            "image": "poco_x6_pro_gray.jpg"
+          },
+          {
+            "name": "Black",
+            "hex": "#000000",
+            "image": "poco_x6_pro_black.jpg"
+          }
+        ],
+        "storages": [
+          {
+            "size": "64GB",
+            "price": 1399.99,
+            "available": true
+          },
+          {
+            "size": "128GB",
+            "price": 1499.99,
+            "available": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Poco F5 Pro",
+    "category":"Poco",
+    "displayImage": "poco_f5_pro.png",
+    "image": "poco_f5_pro.png",
+    "description": "The Poco F5 Pro offers a high-performance Snapdragon 8+ Gen 1 chip, a powerful camera system, and a stunning AMOLED display.",
+    "price": 1299.99,
+    "variants": [
+      {
+        "name": "Poco F5 Pro",
+        "price": 1299.99,
+        "image": "poco_f5_pro.png",
+        "colors": [
+          {
+            "name": "White",
+            "hex": "#ffffff",
+            "image": "poco_f5_pro_white.jpg"
+          },
+          {
+            "name": "Blue",
+            "hex": "#6495ed",
+            "image": "poco_f5_pro_blue.jpg"
+          },
+          {
+            "name": "Black",
+            "hex": "#000000",
+            "image": "poco_f5_pro_black.jpg"
+          }
+        ],
+        "storages": [
+          {
+            "size": "64GB",
+            "price": 1299.99,
+            "available": true
+          },
+          {
+            "size": "128GB",
+            "price": 1399.99,
+            "available": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Poco M6 Pro 5G",
+    "category":"Poco",
+    "displayImage": "poco_m6_pro_5g.png",
+    "image": "poco_m6_pro_5g.png",
+    "description": "The Poco M6 Pro 5G offers a high-performance Snapdragon 4 Gen 2 chip, a powerful camera system, and a stunning IPS display.",
+    "price": 1099.99,
+    "variants": [
+      {
+        "name": "Poco M6 Pro 5G",
+        "price": 1099.99,
+        "image": "poco_m6_pro_5g.png",
+        "colors": [
+          {
+            "name": "Purple",
+            "hex": "#9370db",
+            "image": "poco_m6_pro_5g_purple.jpg"
+          },
+          {
+            "name": "Blue",
+            "hex": "#6495ed",
+            "image": "poco_m6_pro_5g_blue.jpg"
+          },
+          {
+            "name": "Black",
+            "hex": "#000000",
+            "image": "poco_m6_pro_5g_black.jpg"
+          }
+        ],
+        "storages": [
+          {
+            "size": "64GB",
+            "price": 1099.99,
+            "available": true
+          },
+          {
+            "size": "128GB",
+            "price": 1199.99,
+            "available": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Oppo Find N2 Flip",
+    "category": "Oppo",
+    "displayImage": "oppo_find_n2_flip.png",
+    "image": "oppo_find_n2_flip.png",
+    "description": "The Oppo Find N2 Flip offers a powerful Dimensity 9000+ chip, versatile camera system, and a stunning foldable AMOLED display.",
+    "price": 999.99,
+    "variants": [
+      {
+        "name": "Oppo Find N2 Flip",
+        "price": 999.99,
+        "image": "oppo_find_n2_flip_display.webp",
+        "colors": [
+          {
+            "name": "Black",
+            "hex": "#000000",
+            "image": "oppo_find_n2_flip_black.jpg"
+          },
+          {
+            "name": "Purple",
+            "hex": "#9370db",
+            "image": "oppo_find_n2_flip_purple.jpg"
+          }
+        ],
+        "storages": [
+          {
+            "size": "128GB",
+            "price": 999.99,
+            "available": true
+          },
+          {
+            "size": "256GB",
+            "price": 1099.99,
+            "available": true
+          },
+          {
+            "size": "512GB",
+            "price": 1199.99,
+            "available": true
+          }
+        ]
+      }
+    ]
+  }  
+]

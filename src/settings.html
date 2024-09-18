@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechTrove - Settings</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="settingstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body class="scroll-animation">
+    <header>
+        <div class="container">
+            <div id="loading-overlay" class="loading-overlay">
+                <div class="loader"></div>
+            </div>
+            <nav class="header">
+                <div class="logo">
+                    <a href="index.html">TechTrove.</a>
+                </div>
+                <div class="promo-banner">
+                    <p id="promo-banner-message">Free shipping on orders over ₱25,000!</p>
+                </div>
+                <div class="menu-right">
+                    <button class="cart-btn" id="cart-btn"><i class="fas fa-shopping-cart"></i><small class="cart-qty">0</small></button>
+                    <div id="auth-container"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Navigation -->
+    <nav class="main-nav">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Shop</a></li>
+                <li><a href="index.html#about-us">About Us</a></li>
+                <li><a href="#support">Support</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="settings-layout">
+        <div class="sidebar">
+            <button class="btn" data-category="store-settings">Store Settings</button>
+            <button class="btn" data-category="shipping-payment-options">Shipping & Payment</button>
+            <button class="btn" data-category="order-status">Order Status</button>
+        </div>
+
+        <div class="settings-container">
+            <div id="store-settings" class="content store-settings">
+                <h2>Store Settings</h2>
+                <div class="section">
+                    <h3>General</h3>
+                    <form>
+                        <label for="main-currency">Main Currency</label>
+                        <select id="main-currency">
+                            <option value="usd">U.S. Dollar</option>
+                            <!-- Add more currency options as needed -->
+                        </select>
+
+                        <div>
+                            <label for="display-product-tree">Display tree of product sections</label>
+                            <input type="checkbox" id="display-product-tree" checked>
+                        </div>
+
+                        <div>
+                            <label for="product-path">Products starting path</label>
+                            <input type="text" id="product-path" value="/Products">
+                        </div>
+
+                        <div>
+                            <label for="display-products-in-tree">Display products in sections tree</label>
+                            <input type="checkbox" id="display-products-in-tree" checked>
+                        </div>
+
+                        <div>
+                            <label for="allow-standalone-skus">Allow stand-alone SKUs</label>
+                            <input type="checkbox" id="allow-standalone-skus">
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div id="shipping-payment-options" class="content shipping-payment-options">
+                <h2>Shipping and Payment Options</h2>
+                <div class="section">
+                    <h3>Shipping Options</h3>
+                    <form>
+                        <!-- Add form fields related to shipping options -->
+                    </form>
+                </div>
+
+                <div class="section">
+                    <h3>Payment Options</h3>
+                    <form>
+                        <!-- Add form fields related to payment options -->
+                    </form>
+                </div>
+            </div>
+
+            <div id="order-status" class="content order-status">
+                <h2>Order Status</h2>
+                <div class="section">
+                    <h3>Status of Orders</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Order ID</th>
+                                <th>Status</th>
+                                <th>Product Ordered</th>
+                                <th>Quantity</th>
+                                <th>Date</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="orders-list">
+                            <!-- Orders will be dynamically inserted here -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="support">
+        <div class="container">
+            <div class="footer-content">
+                <div class="address">
+                    <h3>ITP104L Finals Project</h3>
+                    <span>GROUP MEMBERS:</span>
+                    <p>Co, Jensen Allen Y.<br>De Castro, Justine Raineir<br>Quinto, Ralph Guerson F.</p>
+                </div>
+                <div class="customer-service">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Order Tracking</a></li>
+                        <li><a href="#">Returns & Exchanges</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="legal">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                <div class="stay-connected">
+                    <h3>Stay Connected</h3>
+                    <p>Join our newsletter for exclusive deals and the latest tech news:</p>
+                    <input type="text" placeholder="Your Email">
+                    <button>Subscribe</button>
+                    <p>Follow us on social media:</p>
+                    <ul class="social-media">
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>© 2024 All rights reserved. Design by <a href="index.html">CoDeCastroQuinto</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Order Details Modal -->
+    <div id="order-details-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeOrderDetailsModal()">&times;</span>
+            <h2>Order Details</h2>
+            <div id="order-details-content"></div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            function filterContent(event, category) {
+                // Get all elements with class="content"
+                var elements = document.getElementsByClassName('content');
+                var buttons = document.getElementsByClassName('btn');
+
+                // Loop through all content divs, and hide those who don't match the selected category
+                for (var i = 0; i < elements.length; i++) {
+                    elements[i].style.display = elements[i].classList.contains(category) ? 'block' : 'none';
+                }
+
+                // Remove active class from all buttons
+                for (var j = 0; j < buttons.length; j++) {
+                    buttons[j].classList.remove('active');
+                }
+
+                // Add active class to the clicked button
+                if (event && event.target) {
+                    event.target.classList.add('active');
+                }
+            }
+
+            // Add event listeners to sidebar buttons
+            const buttons = document.querySelectorAll('.sidebar .btn');
+            buttons.forEach(button => {
+                button.addEventListener('click', function(event) {
+                    filterContent(event, button.dataset.category);
+                });
+            });
+
+            // Initialize to show the first content category
+            filterContent({ target: document.querySelector('.sidebar .btn') }, 'store-settings');
+            loadOrders();
+
+            function loadOrders() {
+                const orders = JSON.parse(localStorage.getItem('orders')) || [];
+                const ordersList = document.getElementById('orders-list');
+
+                if (ordersList) {
+                    ordersList.innerHTML = orders.map((order, index) => `
+                        <tr>
+                            <td>${order.orderId}</td>
+                            <td>${order.status || 'Pending'}</td>
+                            <td>${order.items.map(item => `${item.variant.name} (${item.color.name}, ${item.storage.size})`).join(', ')}</td>
+                            <td>${order.items.length}</td>
+                            <td>${order.date}</td>
+                            <td><button onclick="viewOrderDetails(${index})">View</button></td>
+                        </tr>
+                    `).join('');
+                }
+            }
+
+            function viewOrderDetails(index) {
+                const orders = JSON.parse(localStorage.getItem('orders')) || [];
+                const order = orders[index];
+                const modal = document.getElementById('order-details-modal');
+                const content = document.getElementById('order-details-content');
+
+                if (content) {
+                    content.innerHTML = `
+                        <p><strong>Order ID:</strong> ${order.orderId}</p>
+                        <p><strong>Status:</strong> ${order.status || 'Pending'}</p>
+                        <p><strong>Date:</strong> ${order.date}</p>
+                        <p><strong>Items:</strong></p>
+                        <ul>
+                            ${order.items.map(item => `<li>${item.variant.name} (${item.color.name}, ${item.storage.size}) </li>`).join('')}
+                        </ul>
+                    `;
+                }
+
+                if (modal) {
+                    modal.style.display = 'block';
+                }
+            }
+
+            window.viewOrderDetails = viewOrderDetails; // Expose the function to the global scope
+        });
+
+        function closeOrderDetailsModal() {
+            const modal = document.getElementById('order-details-modal');
+            if (modal) {
+                modal.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+
+</html>
